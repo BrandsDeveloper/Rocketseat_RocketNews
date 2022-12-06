@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    display:flex;
+}
+
+#info{
+    background-color: var(--body-bg-color);
+    flex-basis: 53%;
+    padding: 0px 30px;
+}
+
+#info > svg{
+    margin-top: 50px;
+}
+
+#info h3{
+    margin-top: 70px;
+    color: var(--title-color);
+    font-size: 24px;
+}
+
+#info h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+#info p{
+    color: var(--text-color);
+}
+
+#info .forms{
+    margin-top: 40px;
+    position: absolute;
+}
+
+#info .forms label{
+    color: var(--form-color);
+    font-weight: bold;
+}
+
+#info .forms input[type="email"]{
+    width: 798px;
+    height: 48px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-left: 7px solid var(--title-color);
+    padding-left: 7px;
+    font-size: 15px;
+}
+
+#info .forms input[type="button"]{
+    width: 48px;
+    height: 48px;
+    outline: none;
+    border: none;
+    background: var(--bg-button-color);
+    background-image: url(../img/send.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    margin-top: 10px;
+}
+
+#info .forms .link{
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+#info .forms .link a{
+    text-decoration: none;
+    color: var(--bg-button-color);
+    line-height: 0px;
+}
+
+#info .forms .link svg{
+    color: var(--bg-button-color);
+}
+
+#foto{
+    background: url(../img/read_news.jpg) no-repeat;
+    background-size: cover;
+    background-position: -240px 0px;
+    flex-basis: 47%;
+}
